@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS Transport - Bus Directory</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            🚌 AS TRANSPORT
+        </div>
+        <p>Bus Transport Directory</p>
+    </header>
+
+    <main class="container">
+
+        <h1>AS Transport Bus Directory</h1>
+
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="Search bus name or route..."
+            >
+
+            <select id="cityFilter">
+                <option value="all">All Cities</option>
+            </select>
+
+        </div>
+
+        <div id="busContainer" class="bus-container"></div>
+
+        <p id="noResults" class="no-results">
+            No buses found
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 AS Transport | Safe Journey, Happy Journey 🚌</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #d71920, #8b0000);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* Main container */
+
+.container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 30px;
+}
+
+/* Search and filter */
+
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input,
+select {
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #d71920;
+}
+
+/* Bus cards */
+
+.bus-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.bus-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    border-top: 6px solid #d71920;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s;
+}
+
+.bus-card:hover {
+    transform: translateY(-5px);
+}
+
+.bus-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.bus-card h2 {
+    color: #d71920;
+    margin-bottom: 15px;
+}
+
+.bus-card p {
+    margin: 9px 0;
+    color: #444;
+}
+
+.label {
+    font-weight: bold;
+    color: #222;
+}
+
+/* No results */
+
+.no-results {
+    display: none;
+    text-align: center;
+    color: #d71920;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .bus-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
